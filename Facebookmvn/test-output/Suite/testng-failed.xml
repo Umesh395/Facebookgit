@@ -13,7 +13,6 @@
           <include name="clearObjects"/>
           <include name="closeBrowser"/>
           <include name="openRoomsPage"/>
-          <include name="verifyGoBackToMassengerButton"/>
         </methods>
       </class> <!-- pack.VerifyRoomPage -->
     </classes>
