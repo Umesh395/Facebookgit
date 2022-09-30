@@ -85,11 +85,12 @@ public class VerifySubmitAndCancelButton extends Base {
 	@AfterMethod
 	public void logoutFromApplication(ITestResult result) throws IOException {
 		System.out.println("AfterMethod");
-	//	if(ITestResult.FAILURE==result.getStatus())
-		//{
+		if(ITestResult.FAILURE==result.getStatus())
+		{
 		   Utility.captureScreen(driver, testCaseID);
-	//	}
+		}
 	}
+	
 	@AfterClass
 	public void clearObjects() {
     	System.out.println("AfterClass");              
