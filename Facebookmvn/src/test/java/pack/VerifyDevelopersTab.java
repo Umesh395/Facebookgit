@@ -95,8 +95,8 @@ public class VerifyDevelopersTab extends Base{
 	
 		@AfterTest
 		public void closeBrowser() {
-			driver.close();
-			driver=null;
+		//	driver.close();
+		//	driver=null;
 			System.gc();       //garbage collector
 
 		}

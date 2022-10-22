@@ -4,15 +4,26 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="pack.VerifySubmitAndCancelButton">
+        <methods>
+          <include name="openForgottonPassword"/>
+          <include name="logoutFromApplication"/>
+          <include name="clearObjects"/>
+          <include name="closeBrowser"/>
+          <include name="verifySerchButton"/>
+          <include name="verifyCancelButton"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- pack.VerifySubmitAndCancelButton -->
       <class name="pack.VerifyRoomPage">
         <methods>
           <include name="logoutFromApplication"/>
           <include name="verifyContactToHelpCentreButton"/>
           <include name="createPMObjects"/>
-          <include name="openBrowser"/>
           <include name="clearObjects"/>
           <include name="closeBrowser"/>
           <include name="openRoomsPage"/>
+          <include name="verifyGoBackToMassengerButton"/>
         </methods>
       </class> <!-- pack.VerifyRoomPage -->
     </classes>
@@ -20,12 +31,22 @@
   <test thread-count="5" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
+      <class name="pack.VerifySubmitAndCancelButton">
+        <methods>
+          <include name="openForgottonPassword"/>
+          <include name="logoutFromApplication"/>
+          <include name="clearObjects"/>
+          <include name="closeBrowser"/>
+          <include name="verifySerchButton"/>
+          <include name="verifyCancelButton"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- pack.VerifySubmitAndCancelButton -->
       <class name="pack.VerifyRoomPage">
         <methods>
           <include name="logoutFromApplication"/>
           <include name="verifyContactToHelpCentreButton"/>
           <include name="createPMObjects"/>
-          <include name="openBrowser"/>
           <include name="clearObjects"/>
           <include name="closeBrowser"/>
           <include name="openRoomsPage"/>
